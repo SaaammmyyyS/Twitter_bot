@@ -41,10 +41,10 @@ def Login():
     driver.get("https://twitter.com/i/flow/login")
     time.sleep(5)
 
-    email = driver.find_element_by_xpath("//input[@name='text']").send_keys("@SadBoiTeddy")
+    email = driver.find_element_by_xpath("//input[@name='text']").send_keys("{EnterYourEmailHere}")
     next = driver.find_element_by_xpath('//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[6]').click()
     time.sleep(3)
-    password = driver.find_element_by_xpath("//input[@name='password']").send_keys("Chhrime2")
+    password = driver.find_element_by_xpath("//input[@name='password']").send_keys("{EnterYourPasswordHere}")
     login = driver.find_element_by_xpath("//div[@data-testid='LoginForm_Login_Button']")
     login.click()
     time.sleep(3)
